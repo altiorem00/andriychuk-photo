@@ -1,0 +1,12 @@
+node_modules
+*.log*
+.nuxt
+.nitro
+.cache
+.output
+.env
+.idea
+.firebase
+build
+andriychuk-2d5ce-firebase-adminsdk-3k73h-e5c6ce65ae.json
+dist

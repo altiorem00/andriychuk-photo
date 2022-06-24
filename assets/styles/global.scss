@@ -1,0 +1,62 @@
+@import "normalize.css";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity .3s ease-in-out;
+  will-change: opacity;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+  will-change: opacity;
+}
+
+.list-move,
+.list-enter-active,
+.list-leave-active {
+  transition: all 0.5s ease;
+}
+
+.list-enter-from,
+.list-leave-to {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.alert-move,
+.alert-enter-active,
+.alert-leave-active {
+  transition: all 0.3s ease-in-out;
+}
+
+.alert-enter-from,
+.alert-leave-to {
+  opacity: 0;
+  transform: translate(-50%, -15px) !important;
+}
+
+.list-leave-active {
+  position: absolute;
+}
+
+.slide-enter-active,
+.slide-leave-active {
+  transition: clip-path 1s ease-in-out;
+  clip-path: inset(0% 0% 0% 0);
+}
+
+.slide-enter-from,
+.slide-leave-to {
+  clip-path: inset(0% 0% 100% 0);
+}
